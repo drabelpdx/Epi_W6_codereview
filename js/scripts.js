@@ -1,21 +1,14 @@
 var findReplace = function(sentence, word1, word2) {
+  var myArr = sentence.split(" ");
+  var searchWord = word1;
 
+  for(var i = 0; i < myArr.length; i +=1) {
+    var currentWord = myArr[i];
+    if (searchWord === currentWord) {
+
+      var foundIndex = i;
+      var found = myArr[foundIndex];
+      return found;
+    }
+  }
 };
-
-  // $(document).ready(function() {
-  //   $("form#wordcount").submit(function(event) {
-  //     var sentence = $("input#sentence").val();
-  //     var sentence = $("input#word1").val();
-  //     var sentence = $("input#word2").val();
-  //     var result = findReplace(sentence, word1, word2);
-  //     console.log(sentence)
-  //     console.log(word1)
-  //     console.log(word2)
-  //     console.log(result)
-  //     $(".words").html(result);
-  //
-  //     $("#result").show();
-  //
-  //     event.preventDefault();
-  //   });
-  // });
