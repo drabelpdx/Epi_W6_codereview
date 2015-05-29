@@ -1,14 +1,20 @@
 var findReplace = function(sentence, word1, word2) {
-  var first = sentence.split(" ");
   var sentenceLower = sentence.toLowerCase();
   var myArr = sentenceLower.split(" ");
   var searchWord = word1.toLowerCase();
   var replaceWord = word2.toLowerCase();
 
+  for (var i = -1; i < myArr.length; i++) {
   myArr[myArr.indexOf(searchWord)] = replaceWord;
-  var firstWord = first.shift();
-  var lose = myArr.shift();
-  myArr.unshift(firstWord);
+  }
+
+  var first = myArr.shift();
+  var letters = first.split("");
+  var letter = letters.shift();
+  var upper = letter.toUpperCase();
+  letters.unshift(upper);
+  var capital= letters.join("")
+  myArr.unshift(capital);
   var fixed = myArr.join(" ");
 
   return fixed;

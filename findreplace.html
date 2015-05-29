@@ -17,29 +17,30 @@
   <div class="col-md-6">
       <div class="top">
      <div class="title">
-      <h1>Find Replace</h1>
+      <h1>Find and Replace</h1>
 
       <form id="findreplace">
         <div class="form-group">
           <label for="sentence">Your sentence:</label>
-          <input id="sentence" class="form-control" type="email" placeholder="Enter your sentence"><br>
+          <input id="sentence" class="form-control" type="text" placeholder="Enter your sentence"><br>
           <label for="word1">Your search word:</label>
-          <input id="word1" class="form-control" type="email" placeholder="Enter your search word"><br>
+          <input id="word1" class="form-control" type="text" placeholder="Enter your search word"><br>
           <label for="word2">Your replacement word:</label>
-          <input id="word2" class="form-control" type="email" placeholder="Enter your replacement word">
+          <input id="word2" class="form-control" type="text" placeholder="Enter your replacement word">
         </div>
-
+<br>
         <button type="submit" class="btn">Find and Replace!</button>
       </form>
-<br><br>
+<br>
 </div></div>
 <div class="col-md-6">
       <div id="result">
         <div class="lower">
+        <p>The new sentence is:  <span class="find"></span></p><br>
         <p>Sentence was:  <span class="sentence"></span><br>
           Search word was:  <span class="word"></span> <br>
-          Replacement word was:  <span class="word2"></span><br><br>
-          The new sentence is:  <span class="find"></span></p>
+          Replacement word was:  <span class="word2"></span></p>
+
       </div>
     </div>
   </div>

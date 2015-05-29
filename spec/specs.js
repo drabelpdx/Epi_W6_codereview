@@ -1,7 +1,7 @@
 describe('findReplace', function() {
 
   it("finds and returns a word from a string", function() {
-    expect(findReplace("phrase", "phrase", "phrase")).to.equal("phrase");
+    expect(findReplace("phrase", "phrase", "phrase")).to.equal("Phrase");
   });
 
   it("finds and replaces a word from a string", function() {
