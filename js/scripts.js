@@ -13,7 +13,7 @@ var findReplace = function(sentence, word1, word2) {
   var letter = letters.shift();
   var upper = letter.toUpperCase();
   letters.unshift(upper);
-  var capital= letters.join("")
+  var capital = letters.join("")
   myArr.unshift(capital);
   var fixed = myArr.join(" ");
 

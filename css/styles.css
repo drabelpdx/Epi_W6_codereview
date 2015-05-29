@@ -1,17 +1,15 @@
 
-
 .wholeform {
   background-color: lightblue;
 }
 
 .top {
-  background-color: lightgreen; width: 600px; align: center; padding: 10px; border-radius: 10px; margin: 5px;
+  background-color: lightgreen; width: 600px; align-self: center; padding: 10px; border-radius: 10px; margin: 5px;
 }
 
 .lower {
-  background-color: lightyellow; width: 570px; align: center; padding: 10px; border-radius: 10px; margin: 5px;
+  background-color: lightyellow; width: 600px; align-self: center; padding: 10px; border-radius: 10px; margin: 5px;
 }
-
 
 .title h1 {
   color: white; text-align: center;
