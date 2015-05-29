@@ -1,14 +1,11 @@
 var findReplace = function(sentence, word1, word2) {
   var myArr = sentence.split(" ");
   var searchWord = word1;
+  var replaceWord = word2;
 
-  for(var i = 0; i < myArr.length; i +=1) {
-    var currentWord = myArr[i];
-    if (searchWord === currentWord) {
+  myArr[myArr.indexOf(searchWord)] = replaceWord;
+  var fixed = myArr.join(" ");
 
-      var foundIndex = i;
-      var found = myArr[foundIndex];
-      return found;
-    }
-  }
+  return fixed;
+
 };
