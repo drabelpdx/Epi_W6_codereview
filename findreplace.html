@@ -8,28 +8,43 @@
     <title>Find Replace</title>
   </head>
   <body>
+    <div class="wholeform">
     <div class="container">
+      <div class="row"><br><br></div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+  <div class="col-md-6">
+      <div class="top">
+     <div class="title">
       <h1>Find Replace</h1>
 
       <form id="findreplace">
         <div class="form-group">
-          <label for="sentence">Enter your sentence here:</label>
-          <input id="sentence" type="text"><br>
-          <label for="word1">Enter your search word here:</label>
-          <input id="word1" type="text"><br>
-          <label for="word2">Enter your replace word here:</label>
-          <input id="word2" type="text">
+          <label for="sentence">Your sentence:</label>
+          <input id="sentence" class="form-control" type="email" placeholder="Enter your sentence"><br>
+          <label for="word1">Your search word:</label>
+          <input id="word1" class="form-control" type="email" placeholder="Enter your search word"><br>
+          <label for="word2">Your replacement word:</label>
+          <input id="word2" class="form-control" type="email" placeholder="Enter your replacement word">
         </div>
 
         <button type="submit" class="btn">Find and Replace!</button>
       </form>
 <br><br>
+</div></div>
+<div class="col-md-6">
       <div id="result">
+        <div class="lower">
         <p>Sentence was:  <span class="sentence"></span><br>
           Search word was:  <span class="word"></span> <br>
           Replacement word was:  <span class="word2"></span><br><br>
           The new sentence is:  <span class="find"></span></p>
       </div>
     </div>
+  </div>
+  <div class="col-md-2"></div>
+</div></div></div>
+<div class="row"><br><br></div>
   </body>
 </html>

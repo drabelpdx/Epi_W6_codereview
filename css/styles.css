@@ -1,3 +1,22 @@
+
+
+.wholeform {
+  background-color: lightblue;
+}
+
+.top {
+  background-color: lightgreen; align: center; padding: 10px; border-radius: 10px; margin: 5px;
+}
+
+.lower {
+  background-color: lightyellow; align: center; padding: 10px; border-radius: 10px; margin: 5px;
+}
+
+
+.title h1 {
+  color: white; text-align: center;
+}
+
 #result {
   display:none;
 }
