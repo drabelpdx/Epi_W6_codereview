@@ -11,17 +11,24 @@
     <div class="container">
       <h1>Find Replace</h1>
 
-      <form id="wordcount">
+      <form id="findreplace">
         <div class="form-group">
-          <label for="words">Enter your sentence here:</label>
-          <input id="words" type="text">
+          <label for="sentence">Enter your sentence here:</label>
+          <input id="sentence" type="text"><br>
+          <label for="word1">Enter your search word here:</label>
+          <input id="word1" type="text"><br>
+          <label for="word2">Enter your replace word here:</label>
+          <input id="word2" type="text">
         </div>
 
-        <button type="submit" class="btn">Count it Up!</button>
+        <button type="submit" class="btn">Find and Replace!</button>
       </form>
 <br><br>
       <div id="result">
-        <p>Number of times the word apprears : Each Word <br><span class="words"></span></p>
+        <p>Sentence was:  <span class="sentence"></span><br>
+          Search word was:  <span class="word"></span> <br>
+          Replacement word was:  <span class="word2"></span><br><br>
+          The new sentence is:  <span class="find"></span></p>
       </div>
     </div>
   </body>
