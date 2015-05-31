@@ -8,47 +8,38 @@
     <title>Find Replace</title>
   </head>
   <body>
-    <div class="wholeform">
-      <div class="container">
-        <div class="row"><br><br>
+    <div class="container-fluid">
+      <br><br>
+      <div class="top">
+        <div class="title">
+          <h1>Find and Replace</h1>
+          <h4>Search for a given word and replace it with another.</h4>
         </div>
-        <div class="row">
-          <div class="col-md-10">
-            <div class="top">
-              <div class="title">
-                <h1>Find and Replace</h1>
-                <form id="findreplace">
-                  <div class="form-group">
-                    <label for="sentence">Your sentence:</label>
-                    <input id="sentence" class="form-control" type="text" placeholder="Enter your sentence"><br>
-                    <label for="word1">Your search word:</label>
-                    <input id="word1" class="form-control" type="text" placeholder="Enter your search word"><br>
-                    <label for="word2">Your replacement word:</label>
-                    <input id="word2" class="form-control" type="text" placeholder="Enter your replacement word">
-                  </div> <br>
-                  <button type="submit" class="btn">Find and Replace!</button>
-                </form><br>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-10">
-            <div id="result">
-              <div class="lower">
-                <p>The new sentence is:  <span class="find"></span></p><br>
-                <p>Sentence was:  <span class="sentence"></span><br>
-                Search word was:  <span class="word"></span> <br>
-                Replacement word was:  <span class="word2"></span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-10"><br><br>
-          </div>
+        <br>
+        <form id="findreplace">
+          <div class="form-group">
+            <label for="sentence">Your sentence:</label>
+            <input id="sentence" class="form-control" type="text" placeholder="Enter your sentence"><br>
+            <label for="word1">Your search word:</label>
+            <input id="word1" class="form-control" type="text" placeholder="Enter your search word"><br>
+            <label for="word2">Your replacement word:</label>
+            <input id="word2" class="form-control" type="text" placeholder="Enter your replacement word">
+          </div> <br>
+          <button type="submit" class="btn btn-info btn-lg btn-block">Find and Replace!</button>
+        </form>
+      </div>
+      <br>
+      <div id="result">
+        <div class="lower">
+          <div id="returnsentence">
+          <p><strong>The new sentence is:</strong>&nbsp;&nbsp;<br><span class="find"></span></p>
+        </div><br>
+          <p><strong>Sentence was:</strong>&nbsp;&nbsp;<span class="sentence"></span><br><br>
+          <strong>Search word was:</strong>&nbsp;&nbsp;<span class="word"></span> <br><br>
+          <strong>Replacement word was:</strong>&nbsp;&nbsp;<span class="word2"></span></p>
         </div>
       </div>
+      <br><br><br><br><br><br>
     </div>
   </body>
 </html>
